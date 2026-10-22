@@ -14,12 +14,12 @@
 
 ## ⬇️ Télécharger
 
-Va dans **[Releases](../../releases/latest)** et télécharge :
-
 | Appareil | Fichier |
 |---|---|
-| 💻 Mac (macOS 14 Sonoma ou plus récent) | `EpiValastor-macOS.zip` |
-| 📱 iPhone / iPad (iOS 17 ou plus récent) | `EpiValastor.ipa` |
+| 💻 Mac (macOS 14 Sonoma ou plus récent) | **[EpiValastor-macOS.zip](https://github.com/Valastored/epivalastor-apple/raw/main/download/EpiValastor-macOS.zip)** |
+| 📱 iPhone / iPad (iOS 17 ou plus récent) | **[EpiValastor.ipa](https://github.com/Valastored/epivalastor-apple/raw/main/download/EpiValastor.ipa)** |
+
+Clique sur le nom du fichier : le téléchargement démarre directement. Version actuelle : **1.0**.
 
 ---
 
@@ -40,7 +40,7 @@ Apple n'autorise pas l'installation d'un fichier comme un APK Android. Le plus s
 et la **renouvelle automatiquement** tous les 7 jours.
 
 1. Installe **SideStore** sur ton iPhone en suivant [le guide officiel](https://docs.sidestore.io) (à faire une seule fois, avec un ordinateur).
-2. Télécharge `EpiValastor.ipa` sur ton iPhone (Safari › Releases, ou AirDrop depuis ton ordinateur).
+2. Télécharge [`EpiValastor.ipa`](https://github.com/Valastored/epivalastor-apple/raw/main/download/EpiValastor.ipa) sur ton iPhone (depuis Safari, ou AirDrop depuis ton ordinateur).
 3. Ouvre **SideStore › My Apps › +** et choisis `EpiValastor.ipa`.
 4. Ouvre EpiValastor › ⚙️ **Réglages › Agendas** › ajoute ton lien ICS.
 5. Autorise les **notifications** et les **Live Activities** quand l'app le demande.
