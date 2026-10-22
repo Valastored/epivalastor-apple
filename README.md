@@ -51,8 +51,17 @@ et la **renouvelle automatiquement** tous les 7 jours.
 
 ## 🔗 Où trouver ton lien ICS ?
 
-Dans ton outil d'emploi du temps (ex. **Zeus** pour l'EPITA / IONIS), cherche **Exporter / iCal / S'abonner** sur la vue de ton groupe
-et copie le lien (`https://…ics…`). ⚠️ Ce lien est personnel : ne le partage pas publiquement.
+Sur **[Zeus](https://zeus.ionis-it.com)** (EPITA / IONIS) :
+
+1. Connecte-toi et clique sur le bouton **« Générer un lien ICS »**.
+2. Choisis **Group**.
+3. Sélectionne tes groupes **un par un** (ta promo, ton groupe de TP, tes options…).
+4. Copie le lien généré (`https://zeus.ionis-it.com/api/group/…/ics/…`) et colle-le dans l'app.
+
+Astuce : ajoute `?startDate=2026-08-15` à la fin du lien pour récupérer aussi les cours déjà passés.
+Tu peux ajouter **plusieurs liens** dans l'app (un par groupe ou par agenda), chacun avec sa couleur.
+
+⚠️ Ce lien est personnel : ne le partage pas publiquement.
 
 ---
 
