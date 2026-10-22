@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35ED3F35A350E04278DF2812 /* EpiValastorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549260216619BBBB24D8E970 /* EpiValastorApp.swift */; };
+		DFCB6C6499F4B6E1588AA82D /* ScheduleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E42C2E34F53054BD84220 /* ScheduleStore.swift */; };
+		3BFDC879E36EE2F0B803601F /* ChangeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E6F3F06009E6EB0D4C1D9 /* ChangeDetector.swift */; };
+		3D5527093B5F5F3A5C386C2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804F03B3B7F09C7BF4B83A3C /* ContentView.swift */; };
+		6629396EC58B7E0174947946 /* PlanningViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86300195F9A73B749D5AB76E /* PlanningViews.swift */; };
+		8E65C5B9D8F73340BF232D6D /* DetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7C23164BE2DBA63CDC302 /* DetailViews.swift */; };
+		AA8C01BFA9BF6D3A4CB5DB86 /* SearchStatsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C70DF0800902072C77CB62 /* SearchStatsViews.swift */; };
+		E0F34463A25FE931EA37844B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F811119F8678CD2F20360 /* SettingsView.swift */; };
+		531C4619E437E384A6ABDA29 /* MenuBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7726EB817697DCBD3A1397CB /* MenuBarViews.swift */; };
+		E1C47C5BABC79B58A54FA520 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D750480C01E793063FB7A1 /* Models.swift */; };
+		8E19826EEBA8C4F54F980D3B /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD02DA8F68F2F2AD2BF754 /* SharedStore.swift */; };
+		C8D6B94A5D5352C70D0FD46A /* CourseRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = D055E321CAF3BBFF29FB78D5 /* CourseRules.swift */; };
+		696F424D0530C1E69B74CDF2 /* ICSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EEA5C0804598DEA148202 /* ICSParser.swift */; };
+		013F60BC267F6E60C545EFBE /* CourseActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A835EA97D9679112DE290 /* CourseActivityAttributes.swift */; };
+		94064DBCE48899B9B675D2C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A0D8259E9DC890D3E3E8B87 /* Assets.xcassets */; };
+		E1FD7D568BF131AF66798678 /* EpiValastorWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1EA728EC1E90CE062CD580D /* EpiValastorWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EC1E608F7ACADD5746721563 /* EpiValastorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22515CA4625924DF703C2E88 /* EpiValastorWidget.swift */; };
+		CCB02AC7762BC087144BD079 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D750480C01E793063FB7A1 /* Models.swift */; };
+		DC33A526200454DAF5CAC68B /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD02DA8F68F2F2AD2BF754 /* SharedStore.swift */; };
+		776C7E95E91158D7ED44F1ED /* CourseRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = D055E321CAF3BBFF29FB78D5 /* CourseRules.swift */; };
+		5D8F8BC1FFD52B825B113814 /* ICSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EEA5C0804598DEA148202 /* ICSParser.swift */; };
+		6B14DBBE6351FA47758580D7 /* CourseActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A835EA97D9679112DE290 /* CourseActivityAttributes.swift */; };
+		53079DE62345B6EA77C05E4D /* EpiValastoriOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73376FEB86557C7E99D7562 /* EpiValastoriOSApp.swift */; };
+		E3DAA9D5334E8795D2DCA9CE /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCE8687A5BA8A3FB7B7B8C /* PhoneContentView.swift */; };
+		9DAC5C41813DE22F22B4BCDC /* PhoneSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75270EE0BC14E5E6232BF39F /* PhoneSettingsView.swift */; };
+		41007F6926D788B33EEF1A21 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C14ECF6B6101761A2F6F2FB /* NotificationManager.swift */; };
+		3802B307A54F288A417FBF30 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7338B347CD3D45F980CE95F7 /* LiveActivityManager.swift */; };
+		7780D33B75144F2FE2857C2D /* ScheduleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051E42C2E34F53054BD84220 /* ScheduleStore.swift */; };
+		C38AE6F12519108A374DBC76 /* ChangeDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55E6F3F06009E6EB0D4C1D9 /* ChangeDetector.swift */; };
+		6483355782DE6F25404F449F /* PlanningViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86300195F9A73B749D5AB76E /* PlanningViews.swift */; };
+		C6A5FA3B79DD75886C35012D /* DetailViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F7C23164BE2DBA63CDC302 /* DetailViews.swift */; };
+		B4918B1E852B4FA3AB26946D /* SearchStatsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C70DF0800902072C77CB62 /* SearchStatsViews.swift */; };
+		6FB4B917858292F9F49AA4A0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D750480C01E793063FB7A1 /* Models.swift */; };
+		374F77B3CC2322EF0662A8CA /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD02DA8F68F2F2AD2BF754 /* SharedStore.swift */; };
+		8ACD58C1E151C1E3A40E2665 /* CourseRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = D055E321CAF3BBFF29FB78D5 /* CourseRules.swift */; };
+		B5003BDF692C517DBD82FFF3 /* ICSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EEA5C0804598DEA148202 /* ICSParser.swift */; };
+		103C35F6A5488FDF3628F3BF /* CourseActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A835EA97D9679112DE290 /* CourseActivityAttributes.swift */; };
+		5C7FCD225CA18726E27DDAAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37025494ADA14538B41F84B8 /* Assets.xcassets */; };
+		CB8835C9729596DEB29031AE /* EpiValastoriOSWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B7BE6061062A5C458A178190 /* EpiValastoriOSWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8317C4AE3FC88E7B5B255A13 /* EpiValastorWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22515CA4625924DF703C2E88 /* EpiValastorWidget.swift */; };
+		C2CBA90848A78DD5846B3A7B /* CourseLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD427F7E98DFC818A53E7E78 /* CourseLiveActivity.swift */; };
+		F07972A1ABC57B6AB460E3C4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D750480C01E793063FB7A1 /* Models.swift */; };
+		70C804D9F55DE91D64E42CF8 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD02DA8F68F2F2AD2BF754 /* SharedStore.swift */; };
+		57668684257D826BE8F0A862 /* CourseRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = D055E321CAF3BBFF29FB78D5 /* CourseRules.swift */; };
+		F72F2B20749899334864B76E /* ICSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09EEA5C0804598DEA148202 /* ICSParser.swift */; };
+		A019979D6A9DF01CE97CA8E7 /* CourseActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A835EA97D9679112DE290 /* CourseActivityAttributes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4109E578F6758B772669BCB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12B3C3344FFD936B6A5217DB;
+			remoteInfo = EpiValastorWidget;
+		};
+		D42D9CF959BF6C2C443B0DF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0AE7DAAB6DAE559BF94993;
+			remoteInfo = EpiValastoriOSWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB1C824E9136455B4B089EF5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1FD7D568BF131AF66798678 /* EpiValastorWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C38BE1F53C02F5D3365597 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB8835C9729596DEB29031AE /* EpiValastoriOSWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A0D8259E9DC890D3E3E8B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E55E6F3F06009E6EB0D4C1D9 /* ChangeDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDetector.swift; sourceTree = "<group>"; };
+		FE2016BC3B6061A15CE3E7CB /* EpiValastor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpiValastor.entitlements; sourceTree = "<group>"; };
+		549260216619BBBB24D8E970 /* EpiValastorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpiValastorApp.swift; sourceTree = "<group>"; };
+		DCADA3C0882F6EED5A392322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		051E42C2E34F53054BD84220 /* ScheduleStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleStore.swift; sourceTree = "<group>"; };
+		804F03B3B7F09C7BF4B83A3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2F7C23164BE2DBA63CDC302 /* DetailViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViews.swift; sourceTree = "<group>"; };
+		7726EB817697DCBD3A1397CB /* MenuBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViews.swift; sourceTree = "<group>"; };
+		86300195F9A73B749D5AB76E /* PlanningViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViews.swift; sourceTree = "<group>"; };
+		B9C70DF0800902072C77CB62 /* SearchStatsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStatsViews.swift; sourceTree = "<group>"; };
+		FA1F811119F8678CD2F20360 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6A4DEE83B8F1DAB4E10510E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4A4A835EA97D9679112DE290 /* CourseActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseActivityAttributes.swift; sourceTree = "<group>"; };
+		D055E321CAF3BBFF29FB78D5 /* CourseRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRules.swift; sourceTree = "<group>"; };
+		F09EEA5C0804598DEA148202 /* ICSParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICSParser.swift; sourceTree = "<group>"; };
+		43D750480C01E793063FB7A1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		75CD02DA8F68F2F2AD2BF754 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		05596D921700703E49BDE4CB /* EpiValastorWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpiValastorWidget.entitlements; sourceTree = "<group>"; };
+		22515CA4625924DF703C2E88 /* EpiValastorWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpiValastorWidget.swift; sourceTree = "<group>"; };
+		18597DFC8925931765C5A8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD427F7E98DFC818A53E7E78 /* CourseLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseLiveActivity.swift; sourceTree = "<group>"; };
+		2070587D264392134334819A /* EpiValastoriOSWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpiValastoriOSWidget.entitlements; sourceTree = "<group>"; };
+		568C82213046BBD153E77CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37025494ADA14538B41F84B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF1F17151B003F1F9E9F00DE /* EpiValastoriOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpiValastoriOS.entitlements; sourceTree = "<group>"; };
+		D73376FEB86557C7E99D7562 /* EpiValastoriOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpiValastoriOSApp.swift; sourceTree = "<group>"; };
+		B8C280844D557BD2E3CF5DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7338B347CD3D45F980CE95F7 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		7C14ECF6B6101761A2F6F2FB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		6EBCE8687A5BA8A3FB7B7B8C /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
+		75270EE0BC14E5E6232BF39F /* PhoneSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSettingsView.swift; sourceTree = "<group>"; };
+		74CC4F491C26B9DE52484B8F /* EpiValastor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpiValastor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EA728EC1E90CE062CD580D /* EpiValastorWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EpiValastorWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA97D3A344169EE26FB08ABC /* EpiValastoriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpiValastoriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BE6061062A5C458A178190 /* EpiValastoriOSWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EpiValastoriOSWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D36A044AAF98FA5CE8E3159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF18D85C6D4E1234CB66B2F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28FD54713122282877BB55ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9FF95E9C24144E5735F359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2772EB5676ED2B691193947 = {
+			isa = PBXGroup;
+			children = (
+				22EE43E5F9A80405E6DFEACD /* App */,
+				C64F91A36BC1DFFBFBF7BCE4 /* Shared */,
+				6986E8ABF2BA75FD324C4787 /* Widget */,
+				2F8F0C6F9B447F7E910D9FBB /* WidgetiOS */,
+				144F9B1F7FB508B4E2E4B070 /* iOS */,
+				6A4DEE83B8F1DAB4E10510E1 /* README.md */,
+				2116D6AA12F4BF2842BA267B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22EE43E5F9A80405E6DFEACD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A76F63BCAAAEAAAF1C54D0E5 /* Views */,
+				4A0D8259E9DC890D3E3E8B87 /* Assets.xcassets */,
+				E55E6F3F06009E6EB0D4C1D9 /* ChangeDetector.swift */,
+				FE2016BC3B6061A15CE3E7CB /* EpiValastor.entitlements */,
+				549260216619BBBB24D8E970 /* EpiValastorApp.swift */,
+				DCADA3C0882F6EED5A392322 /* Info.plist */,
+				051E42C2E34F53054BD84220 /* ScheduleStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A76F63BCAAAEAAAF1C54D0E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				804F03B3B7F09C7BF4B83A3C /* ContentView.swift */,
+				B2F7C23164BE2DBA63CDC302 /* DetailViews.swift */,
+				7726EB817697DCBD3A1397CB /* MenuBarViews.swift */,
+				86300195F9A73B749D5AB76E /* PlanningViews.swift */,
+				B9C70DF0800902072C77CB62 /* SearchStatsViews.swift */,
+				FA1F811119F8678CD2F20360 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C64F91A36BC1DFFBFBF7BCE4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A4A835EA97D9679112DE290 /* CourseActivityAttributes.swift */,
+				D055E321CAF3BBFF29FB78D5 /* CourseRules.swift */,
+				F09EEA5C0804598DEA148202 /* ICSParser.swift */,
+				43D750480C01E793063FB7A1 /* Models.swift */,
+				75CD02DA8F68F2F2AD2BF754 /* SharedStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6986E8ABF2BA75FD324C4787 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				05596D921700703E49BDE4CB /* EpiValastorWidget.entitlements */,
+				22515CA4625924DF703C2E88 /* EpiValastorWidget.swift */,
+				18597DFC8925931765C5A8E5 /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		2F8F0C6F9B447F7E910D9FBB /* WidgetiOS */ = {
+			isa = PBXGroup;
+			children = (
+				CD427F7E98DFC818A53E7E78 /* CourseLiveActivity.swift */,
+				2070587D264392134334819A /* EpiValastoriOSWidget.entitlements */,
+				568C82213046BBD153E77CD3 /* Info.plist */,
+			);
+			path = WidgetiOS;
+			sourceTree = "<group>";
+		};
+		144F9B1F7FB508B4E2E4B070 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				37025494ADA14538B41F84B8 /* Assets.xcassets */,
+				AF1F17151B003F1F9E9F00DE /* EpiValastoriOS.entitlements */,
+				D73376FEB86557C7E99D7562 /* EpiValastoriOSApp.swift */,
+				B8C280844D557BD2E3CF5DA4 /* Info.plist */,
+				7338B347CD3D45F980CE95F7 /* LiveActivityManager.swift */,
+				7C14ECF6B6101761A2F6F2FB /* NotificationManager.swift */,
+				6EBCE8687A5BA8A3FB7B7B8C /* PhoneContentView.swift */,
+				75270EE0BC14E5E6232BF39F /* PhoneSettingsView.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2116D6AA12F4BF2842BA267B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74CC4F491C26B9DE52484B8F /* EpiValastor.app */,
+				A1EA728EC1E90CE062CD580D /* EpiValastorWidget.appex */,
+				EA97D3A344169EE26FB08ABC /* EpiValastoriOS.app */,
+				B7BE6061062A5C458A178190 /* EpiValastoriOSWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D21A5943DCB77F20CBF71295 /* EpiValastor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6C9A5DF36DE77D83977AD71 /* Build configuration list for PBXNativeTarget "EpiValastor" */;
+			buildPhases = (
+				43028A069254E74529757E14 /* Sources */,
+				3D36A044AAF98FA5CE8E3159 /* Frameworks */,
+				E4F984E7B501E01047947E28 /* Resources */,
+				CB1C824E9136455B4B089EF5 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98DA59427BB9B017F457BC35 /* PBXTargetDependency */,
+			);
+			name = EpiValastor;
+			productName = EpiValastor;
+			productReference = 74CC4F491C26B9DE52484B8F /* EpiValastor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12B3C3344FFD936B6A5217DB /* EpiValastorWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCFB70C2DD9CBAF13F70430 /* Build configuration list for PBXNativeTarget "EpiValastorWidget" */;
+			buildPhases = (
+				1BEBAF27FFA5144347D2BB3A /* Sources */,
+				DF18D85C6D4E1234CB66B2F5 /* Frameworks */,
+				C95C3A15BB3B6562CB74F314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpiValastorWidget;
+			productName = EpiValastorWidget;
+			productReference = A1EA728EC1E90CE062CD580D /* EpiValastorWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FD9A5C541C1FBD371E30B4FE /* EpiValastoriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813F512FA36F3641546EA766 /* Build configuration list for PBXNativeTarget "EpiValastoriOS" */;
+			buildPhases = (
+				11B06A89AFCB6D3A43083DDC /* Sources */,
+				28FD54713122282877BB55ED /* Frameworks */,
+				DE75637D591F243A1AF72F34 /* Resources */,
+				81C38BE1F53C02F5D3365597 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6197877BEFD030766689C034 /* PBXTargetDependency */,
+			);
+			name = EpiValastoriOS;
+			productName = EpiValastoriOS;
+			productReference = EA97D3A344169EE26FB08ABC /* EpiValastoriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E0AE7DAAB6DAE559BF94993 /* EpiValastoriOSWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF186147A4FCB64FB9865E4 /* Build configuration list for PBXNativeTarget "EpiValastoriOSWidget" */;
+			buildPhases = (
+				17A8F35EE961D08DE97CDB4E /* Sources */,
+				CE9FF95E9C24144E5735F359 /* Frameworks */,
+				BED5E46B5BE43C535E7C3E8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpiValastoriOSWidget;
+			productName = EpiValastoriOSWidget;
+			productReference = B7BE6061062A5C458A178190 /* EpiValastoriOSWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D21A5943DCB77F20CBF71295 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					12B3C3344FFD936B6A5217DB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FD9A5C541C1FBD371E30B4FE = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					6E0AE7DAAB6DAE559BF94993 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = B8E16E014219581415302EE5 /* Build configuration list for PBXProject "EpiValastor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = A2772EB5676ED2B691193947;
+			productRefGroup = 2116D6AA12F4BF2842BA267B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D21A5943DCB77F20CBF71295 /* EpiValastor */,
+				12B3C3344FFD936B6A5217DB /* EpiValastorWidget */,
+				FD9A5C541C1FBD371E30B4FE /* EpiValastoriOS */,
+				6E0AE7DAAB6DAE559BF94993 /* EpiValastoriOSWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4F984E7B501E01047947E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94064DBCE48899B9B675D2C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95C3A15BB3B6562CB74F314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE75637D591F243A1AF72F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C7FCD225CA18726E27DDAAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED5E46B5BE43C535E7C3E8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43028A069254E74529757E14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35ED3F35A350E04278DF2812 /* EpiValastorApp.swift in Sources */,
+				DFCB6C6499F4B6E1588AA82D /* ScheduleStore.swift in Sources */,
+				3BFDC879E36EE2F0B803601F /* ChangeDetector.swift in Sources */,
+				3D5527093B5F5F3A5C386C2A /* ContentView.swift in Sources */,
+				6629396EC58B7E0174947946 /* PlanningViews.swift in Sources */,
+				8E65C5B9D8F73340BF232D6D /* DetailViews.swift in Sources */,
+				AA8C01BFA9BF6D3A4CB5DB86 /* SearchStatsViews.swift in Sources */,
+				E0F34463A25FE931EA37844B /* SettingsView.swift in Sources */,
+				531C4619E437E384A6ABDA29 /* MenuBarViews.swift in Sources */,
+				E1C47C5BABC79B58A54FA520 /* Models.swift in Sources */,
+				8E19826EEBA8C4F54F980D3B /* SharedStore.swift in Sources */,
+				C8D6B94A5D5352C70D0FD46A /* CourseRules.swift in Sources */,
+				696F424D0530C1E69B74CDF2 /* ICSParser.swift in Sources */,
+				013F60BC267F6E60C545EFBE /* CourseActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BEBAF27FFA5144347D2BB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1E608F7ACADD5746721563 /* EpiValastorWidget.swift in Sources */,
+				CCB02AC7762BC087144BD079 /* Models.swift in Sources */,
+				DC33A526200454DAF5CAC68B /* SharedStore.swift in Sources */,
+				776C7E95E91158D7ED44F1ED /* CourseRules.swift in Sources */,
+				5D8F8BC1FFD52B825B113814 /* ICSParser.swift in Sources */,
+				6B14DBBE6351FA47758580D7 /* CourseActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11B06A89AFCB6D3A43083DDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53079DE62345B6EA77C05E4D /* EpiValastoriOSApp.swift in Sources */,
+				E3DAA9D5334E8795D2DCA9CE /* PhoneContentView.swift in Sources */,
+				9DAC5C41813DE22F22B4BCDC /* PhoneSettingsView.swift in Sources */,
+				41007F6926D788B33EEF1A21 /* NotificationManager.swift in Sources */,
+				3802B307A54F288A417FBF30 /* LiveActivityManager.swift in Sources */,
+				7780D33B75144F2FE2857C2D /* ScheduleStore.swift in Sources */,
+				C38AE6F12519108A374DBC76 /* ChangeDetector.swift in Sources */,
+				6483355782DE6F25404F449F /* PlanningViews.swift in Sources */,
+				C6A5FA3B79DD75886C35012D /* DetailViews.swift in Sources */,
+				B4918B1E852B4FA3AB26946D /* SearchStatsViews.swift in Sources */,
+				6FB4B917858292F9F49AA4A0 /* Models.swift in Sources */,
+				374F77B3CC2322EF0662A8CA /* SharedStore.swift in Sources */,
+				8ACD58C1E151C1E3A40E2665 /* CourseRules.swift in Sources */,
+				B5003BDF692C517DBD82FFF3 /* ICSParser.swift in Sources */,
+				103C35F6A5488FDF3628F3BF /* CourseActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A8F35EE961D08DE97CDB4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8317C4AE3FC88E7B5B255A13 /* EpiValastorWidget.swift in Sources */,
+				C2CBA90848A78DD5846B3A7B /* CourseLiveActivity.swift in Sources */,
+				F07972A1ABC57B6AB460E3C4 /* Models.swift in Sources */,
+				70C804D9F55DE91D64E42CF8 /* SharedStore.swift in Sources */,
+				57668684257D826BE8F0A862 /* CourseRules.swift in Sources */,
+				F72F2B20749899334864B76E /* ICSParser.swift in Sources */,
+				A019979D6A9DF01CE97CA8E7 /* CourseActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98DA59427BB9B017F457BC35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12B3C3344FFD936B6A5217DB /* EpiValastorWidget */;
+			targetProxy = 4109E578F6758B772669BCB2 /* PBXContainerItemProxy */;
+		};
+		6197877BEFD030766689C034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0AE7DAAB6DAE559BF94993 /* EpiValastoriOSWidget */;
+			targetProxy = D42D9CF959BF6C2C443B0DF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		97FDA18D0EBD419F66B21580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9605D30FE3902D6A175027C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D36F09C216002E774D6E682 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = App/EpiValastor.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor;
+			};
+			name = Debug;
+		};
+		0375188D52D7AA321475F68E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = App/EpiValastor.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor;
+			};
+			name = Release;
+		};
+		34D1756B3BDCC564CD633FE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = Widget/EpiValastorWidget.entitlements;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor.widget;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6223A54FF59B3AC12DBD49D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = macosx;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_ENTITLEMENTS = Widget/EpiValastorWidget.entitlements;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor.widget;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6E2253CC89A7DB3B8EFE93A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOS/EpiValastoriOS.entitlements;
+				INFOPLIST_FILE = iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor.ios;
+			};
+			name = Debug;
+		};
+		8C0BBAAF600BD64B4803C3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOS/EpiValastoriOS.entitlements;
+				INFOPLIST_FILE = iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor.ios;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+			};
+			name = Release;
+		};
+		C99C08A34D79B779D826D3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = WidgetiOS/EpiValastoriOSWidget.entitlements;
+				INFOPLIST_FILE = WidgetiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor.ios.widget;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		080EE94751BB16F0A3C42C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CQQN3LN5M8;
+				GENERATE_INFOPLIST_FILE = NO;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = WidgetiOS/EpiValastoriOSWidget.entitlements;
+				INFOPLIST_FILE = WidgetiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.valastor.epivalastor.ios.widget;
+				SKIP_INSTALL = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8E16E014219581415302EE5 /* Build configuration list for PBXProject "EpiValastor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97FDA18D0EBD419F66B21580 /* Debug */,
+				9605D30FE3902D6A175027C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6C9A5DF36DE77D83977AD71 /* Build configuration list for PBXNativeTarget "EpiValastor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D36F09C216002E774D6E682 /* Debug */,
+				0375188D52D7AA321475F68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCFB70C2DD9CBAF13F70430 /* Build configuration list for PBXNativeTarget "EpiValastorWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34D1756B3BDCC564CD633FE3 /* Debug */,
+				6223A54FF59B3AC12DBD49D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813F512FA36F3641546EA766 /* Build configuration list for PBXNativeTarget "EpiValastoriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E2253CC89A7DB3B8EFE93A7 /* Debug */,
+				8C0BBAAF600BD64B4803C3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AF186147A4FCB64FB9865E4 /* Build configuration list for PBXNativeTarget "EpiValastoriOSWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C99C08A34D79B779D826D3E0 /* Debug */,
+				080EE94751BB16F0A3C42C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
