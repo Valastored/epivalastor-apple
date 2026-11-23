@@ -26,13 +26,21 @@ struct Provider: TimelineProvider {
         let now = Date()
         let courses = loadCourses()
         // Une entrée à chaque moment où l'affichage change : 1 h avant, début, fin de chaque cours
+        // Les comptes à rebours (Text .timer) avancent tout seuls : pas besoin de recharger souvent.
         var dates: Set<Date> = [now]
-        let horizon = now.addingTimeInterval(36 * 3600)
+        let horizon = now.addingTimeInterval(48 * 3600)
         for c in courses where c.end > now && c.start < horizon {
             for d in [c.start.addingTimeInterval(-3600), c.start, c.end] where d > now && d < horizon { dates.insert(d) }
         }
-        let entries = dates.sorted().prefix(60).map { entry(at: $0, courses: courses) }
-        completion(Timeline(entries: Array(entries), policy: .after(min(entries.last?.date ?? now, now.addingTimeInterval(3600)).addingTimeInterval(60))))
+        // Minuit : « demain » devient « aujourd'hui »
+        let cal = Calendar.current
+        for day in 1...2 {
+            if let midnight = cal.date(byAdding: .day, value: day, to: cal.startOfDay(for: now)), midnight < horizon { dates.insert(midnight) }
+        }
+        let entries = dates.sorted().prefix(120).map { entry(at: $0, courses: courses) }
+        // Nouvelle timeline au plus tard dans 6 h (peu de rechargements = le système ne bride pas le widget)
+        let refresh = min(entries.last?.date ?? now, now.addingTimeInterval(6 * 3600))
+        completion(Timeline(entries: Array(entries), policy: .after(max(refresh, now.addingTimeInterval(15 * 60)))))
     }
 
     private func loadCourses() -> [Course] {

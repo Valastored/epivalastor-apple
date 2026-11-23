@@ -26,6 +26,10 @@
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Développé par Valastor</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>EpiValastor copie tes cours dans un calendrier « EpiValastor » de l'app Calendrier et le garde à jour.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>EpiValastor copie tes cours dans un calendrier « EpiValastor » de l'app Calendrier et le garde à jour.</string>
 	<key>AppGroupID</key>
 	<string>$(TeamIdentifierPrefix)com.valastor.epivalastor</string>
 </dict>

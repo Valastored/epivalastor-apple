@@ -72,7 +72,7 @@ Tu peux ajouter **plusieurs liens** dans l'app (un par groupe ou par agenda), ch
 - **Prochain cours** toujours visible, avec le temps restant.
 - **Changements détectés** à chaque synchro (cours ajouté, annulé, déplacé).
 - **Recherche** par matière, prof ou salle · **mini-calendrier** · **statistiques** (heures par matière, avancement…).
-- **Mac** : barre des menus (cours + compte à rebours), widgets du bureau.
+- **Mac** : barre des menus (cours + compte à rebours), widgets du bureau, copie automatique des cours dans l'app **Calendrier** (Réglages › Calendrier).
 - **iPhone / iPad** : **Live Activity** (écran verrouillé + Dynamic Island), widgets écran d'accueil et écran verrouillé,
   notifications (rappel 5–60 min avant, examens la veille à 19 h, changements), synchro en arrière-plan.
 - Thème **Système / Clair / Sombre**, matières masquables, plusieurs agendas avec couleurs.

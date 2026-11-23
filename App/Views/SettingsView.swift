@@ -8,6 +8,7 @@ struct SettingsView: View {
             AppearanceSettings().tabItem { Label("Apparence", systemImage: "paintpalette") }
             HiddenSubjectsSettings().tabItem { Label("Matières masquées", systemImage: "eye.slash") }
             SyncSettings().tabItem { Label("Synchronisation", systemImage: "arrow.triangle.2.circlepath") }
+            CalendarAppSettings().tabItem { Label("Calendrier", systemImage: "calendar.badge.plus") }
             AboutSettings().tabItem { Label("À propos", systemImage: "info.circle") }
         }
         .frame(width: 560, height: 460)
@@ -166,6 +167,14 @@ private struct SyncSettings: View {
             Text("L'app reste active dans la barre des menus même quand la fenêtre est fermée.")
                 .font(.caption).foregroundStyle(.secondary)
             HStack {
+                VStack(alignment: .leading) {
+                    Text("Widget")
+                    Text("Si le widget est figé ou vide, recharge-le ici.").font(.caption).foregroundStyle(.secondary)
+                }
+                Spacer()
+                Button("Recharger le widget") { store.refreshWidget() }
+            }
+            HStack {
                 Spacer()
                 Button {
                     Task { await store.sync() }
@@ -176,6 +185,62 @@ private struct SyncSettings: View {
             }
         }
         .formStyle(.grouped)
+    }
+}
+
+// MARK: - App Calendrier
+
+private struct CalendarAppSettings: View {
+    @EnvironmentObject private var store: ScheduleStore
+    @ObservedObject private var calendarSync = CalendarSync.shared
+    @AppStorage(CalendarSync.enabledKey) private var enabled = false
+    @State private var confirmDelete = false
+
+    var body: some View {
+        Form {
+            Section {
+                Toggle("Copier mes cours dans l'app Calendrier", isOn: $enabled)
+                    .onChange(of: enabled) { _, on in
+                        if on { Task { await calendarSync.sync(store.visible, force: true) } }
+                    }
+                Text("Les cours sont ajoutés dans un calendrier « EpiValastor » (iCloud si possible, donc visible aussi sur ton iPhone) et mis à jour à chaque synchronisation : cours ajoutés, déplacés ou annulés. Les matières masquées n'y sont pas, les fériés et vacances sont mis en journée entière.")
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+            if enabled {
+                Section("État") {
+                    if calendarSync.isWorking {
+                        HStack { ProgressView().controlSize(.small); Text("Mise à jour…") }
+                    } else {
+                        Text(calendarSync.status.isEmpty ? "En attente de la prochaine synchronisation." : calendarSync.status)
+                            .foregroundStyle(.secondary)
+                    }
+                    HStack {
+                        Button("Mettre à jour maintenant") {
+                            Task { await calendarSync.sync(store.visible, force: true) }
+                        }
+                        .disabled(calendarSync.isWorking)
+                        Spacer()
+                    }
+                }
+            }
+            Section {
+                HStack {
+                    Text("Retirer le calendrier « EpiValastor » de l'app Calendrier")
+                    Spacer()
+                    Button("Supprimer…", role: .destructive) { confirmDelete = true }
+                }
+            }
+        }
+        .formStyle(.grouped)
+        .confirmationDialog("Supprimer le calendrier « EpiValastor » et tous ses événements de l'app Calendrier ?",
+                            isPresented: $confirmDelete) {
+            Button("Supprimer", role: .destructive) {
+                enabled = false
+                calendarSync.removeCalendar()
+            }
+        } message: {
+            Text("Tes cours restent dans EpiValastor. Tu pourras réactiver la copie plus tard.")
+        }
     }
 }
 
